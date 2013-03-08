@@ -6,15 +6,11 @@ Library for streamed JSON.
 
 Add this line to your application's Gemfile:
 
-    gem 'json_in_batches'
+    gem 'json_in_batches', :git => 'git://github.com/crmaxx/json_in_batches.git'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install json_in_batches
 
 ## Usage
 
