@@ -4,11 +4,9 @@ require 'active_support/concern'
 module JsonInBatches
   extend ActiveSupport::Concern
 
-  module InstanceMethods
-    def to_json_in_batches
-      find_each do |item|
-        Yajl::Encoder.encode(item)
-      end
+  def to_json_in_batches
+    find_each do |item|
+      Yajl::Encoder.encode(item)
     end
   end
 
